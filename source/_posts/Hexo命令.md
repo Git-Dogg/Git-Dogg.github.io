@@ -1,5 +1,5 @@
 ---
-title: Hello Hexo
+title: Hexo命令
 tags: hexo
 categories: 
 	- 雕虫小技

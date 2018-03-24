@@ -74,7 +74,7 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: aero-dual
 # theme_style is default to 'light'
-theme_style: dark
+theme_style: light
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
