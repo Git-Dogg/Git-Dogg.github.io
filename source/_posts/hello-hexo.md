@@ -1,10 +1,12 @@
 ---
 title: Hello Hexo
-tags: others
-categories: 技术
+tags: hexo
+categories: 
+	- 雕虫小技
+	- 雕虫
 ---
 
-**Hexo Quik Start**
+Hexo Quik Start
 
 <!-- more -->
 
@@ -23,7 +25,7 @@ More info: [Writing](https://hexo.io/docs/writing.html)
 ### Run server
 
 ``` bash
-$ hexo server or hexo -s
+$ hexo server or hexo s
 ```
 
 More info: [Server](https://hexo.io/docs/server.html)
@@ -31,7 +33,7 @@ More info: [Server](https://hexo.io/docs/server.html)
 ### Generate static files
 
 ``` bash
-$ hexo generate or hexo -g
+$ hexo generate or hexo g
 ```
 
 More info: [Generating](https://hexo.io/docs/generating.html)
@@ -39,7 +41,7 @@ More info: [Generating](https://hexo.io/docs/generating.html)
 ### Deploy to remote sites
 
 ``` bash
-$ hexo deploy or hexo -d
+$ hexo deploy or hexo d
 ```
 
 More info: [Deployment](https://hexo.io/docs/deployment.html)
