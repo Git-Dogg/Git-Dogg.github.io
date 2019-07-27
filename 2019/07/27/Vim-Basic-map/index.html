@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Bryan">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="Vim-Basic.map"/>
+  <meta property="og:description" content="Have Fun" />
+  <meta property="og:site_name" content="Cozmo"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="http://yoursite.com"/>
+  
+    <link rel="alternate" href="/atom.xml" title="Cozmo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>Cozmo</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="/css/style.light.css">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">Vim-Basic.map</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/">
+                  
+                  Home
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  
+                  Archives
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://github.com/Git-Dogg">
+                  
+                  Github
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="mailto:g_dogg@163.com">
+                  
+                  Email
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By Bryan</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2019-07-27</span>
+            <span class="time">23:10:40</span>
+          </span>
+          
+          <!--  Categories  -->
+            <span class="categories info">Under 
+
+<a href="/categories/雕虫小技/">雕虫小技</a> / <a href="/categories/雕虫小技/小技/">小技</a>
+</span>
+          
+        </div>
+        <!-- Tags -->
+        
+          <div class="post-tags text-muted">
+            Tags: 
+
+<a class="tag" href="/tags/vim-基本操作/">#vim 基本操作</a> <a class="tag" href="/tags/vim-快速移动/">#vim 快速移动</a> <a class="tag" href="/tags/Vim-增删改查/">#Vim 增删改查</a> <a class="tag" href="/tags/Vim-搜索替换/">#Vim 搜索替换</a> <a class="tag" href="/tags/Vim-复制粘贴/">#Vim 复制粘贴</a>
+
+
+          </div>
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <p>Vim 是一个强大的编辑器，同时也是一个与时俱进的90后，能与他并肩作战，见证刀光剑影，将成为永恒的记忆……</p>
+<a id="more"></a>
+<h2 id="VIM基础知识"><a href="#VIM基础知识" class="headerlink" title="VIM基础知识"></a><strong>VIM基础知识</strong></h2><h4 id="1-vim快速移动"><a href="#1-vim快速移动" class="headerlink" title=" 1. vim快速移动"></a><strong> 1. vim快速移动</strong></h4><ul>
+<li><h5 id="vim上下左右移动-hjkl"><a href="#vim上下左右移动-hjkl" class="headerlink" title="vim上下左右移动 hjkl"></a>vim上下左右移动 hjkl</h5><ul>
+<li>h  (左) 、j (下) 、k (上) 、l (右) </li>
+</ul>
+</li>
+<li><h5 id="vim-单词级移动"><a href="#vim-单词级移动" class="headerlink" title="vim 单词级移动"></a>vim 单词级移动</h5><ul>
+<li>w/W 移动到下一个 word/WORD 开头；e/E 移动到下一个 word/WORD 尾</li>
+<li>b/B 回到上一个 word/WORD 开头，可以理解为 backword</li>
+<li>word 是指以非空白符分割的单词，WORD以空白符分割的单词</li>
+</ul>
+</li>
+<li><h5 id="vim-行间搜索移动"><a href="#vim-行间搜索移动" class="headerlink" title="vim 行间搜索移动"></a>vim 行间搜索移动</h5><ul>
+<li>使用 f{char} 可以移动到char 字符上，t 移动到char 的前一个字符</li>
+<li>可以使用分号 (;) 或者逗号 (,) 搜索该行下一个或者上一个字符</li>
+<li>F 表示前向搜索</li>
+</ul>
+</li>
+<li><h5 id="vim-水平移动"><a href="#vim-水平移动" class="headerlink" title="vim 水平移动"></a>vim 水平移动</h5><ul>
+<li>0 移动到行首第一个字符，^ 移动到第一个非空白字符</li>
+<li>$ 移动到行尾，g_ 移动到行尾非空白字符</li>
+</ul>
+</li>
+<li><h5 id="vim-垂直移动"><a href="#vim-垂直移动" class="headerlink" title="vim 垂直移动"></a>vim 垂直移动</h5><ul>
+<li>在句子 (sentence) 和段落 (paragraph) 间移动</li>
+<li>使用括号 () 在句子间移动，使用花括号{}在段落间移动</li>
+<li>easy-motion 插件</li>
+</ul>
+</li>
+<li><h5 id="vim-翻页移动"><a href="#vim-翻页移动" class="headerlink" title="vim 翻页移动"></a>vim 翻页移动</h5><ul>
+<li>gg/G 移动到文件开头/结尾，ctrl + o 快速返回</li>
+<li>H/M/L 跳转到当前屏幕的开头 (Head) 、中间 (Middle) 、结尾 (Lower) </li>
+<li>Ctrl + u、Ctrl + f 上下翻页 (upward/forward) ，zz 将当前光标行放置到屏幕中间</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-vim快速增删改查"><a href="#2-vim快速增删改查" class="headerlink" title=" 2. vim快速增删改查"></a><strong> 2. vim快速增删改查</strong></h4><ul>
+<li><h5 id="vim快速删除"><a href="#vim快速删除" class="headerlink" title="vim快速删除"></a>vim快速删除</h5><ul>
+<li>vim在normal模式下使用x 快速删除一个字符</li>
+<li>使用d  (delete) 配合文本对象快速删除一个单词daw (d around word) <ul>
+<li>dw 默认是daw 还有一种diw 不删除空格</li>
+<li>dd 删除光标所在行</li>
+<li>dt{char} delelte till</li>
+<li>d$ 、d0 删除到 结尾、开头</li>
+</ul>
+</li>
+<li>d 和 x 都可以搭配数字来执行多次</li>
+<li>d 配合 v (选择模式)  V (行选模式) 删除</li>
+</ul>
+</li>
+<li><h5 id="vim快速修改"><a href="#vim快速修改" class="headerlink" title="vim快速修改"></a>vim快速修改</h5><ul>
+<li>常用有三个，r (replace) ，c (change) ，s (substitute) </li>
+<li>normal模式下使用 r 可以替换一个字符；s替换并进入插入模式</li>
+<li>r 和 s 都可以搭配数字来使用</li>
+<li>normal模式下使用R 将进入不间断输入替换模式；S将整行替换并进入插入模式</li>
+<li>使用c配合文本对象，可以进行快速修改<ul>
+<li>cw  (change word) 修改一个word</li>
+<li>ct{char} 修改到指定字符</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h5 id="vim增加字符"><a href="#vim增加字符" class="headerlink" title="vim增加字符"></a>vim增加字符</h5><ul>
+<li>进入插入模式编辑文本</li>
+<li>使用 a/i/o 进入插入模式</li>
+<li>使用 A/I/O 进入插入模式</li>
+</ul>
+</li>
+<li><h5 id="vim快速查询"><a href="#vim快速查询" class="headerlink" title="vim快速查询"></a>vim快速查询</h5><ul>
+<li>使用 / 或者 ? 进行前向或者反向搜索</li>
+<li>使用 n/N 跳转到下一个或者上一个匹配</li>
+<li>使用 * 或者 # 进行当前单词的前向和后向匹配</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-vim搜索替换"><a href="#3-vim搜索替换" class="headerlink" title=" 3. vim搜索替换"></a><strong> 3. vim搜索替换</strong></h4><ul>
+<li><h5 id="vim替换命令"><a href="#vim替换命令" class="headerlink" title="vim替换命令"></a>vim替换命令</h5><ul>
+<li>substitute命令允许我们查找替换文本，并支持正则</li>
+<li>:[range]s[ubstitute]/{pattern}/{string}/[flags]<ul>
+<li>range 表示范围 比如 :10,20 表示10-20行，%表示全部</li>
+<li>pattern 是要替换的模式，string是替换后文本</li>
+<li>pattern 例如 精确匹配this     %s/\&lt;this>//n</li>
+</ul>
+</li>
+<li>flags 几个常用的标志<ul>
+<li>g (lobal) 表示全局范围内执行</li>
+<li>c (onfirm)  表示确认，可以确认或者拒绝修改</li>
+<li>n (umber)  报告匹配到的次数而不替换，可以用来查询匹配次数</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="4-vim复制粘贴"><a href="#4-vim复制粘贴" class="headerlink" title=" 4. vim复制粘贴"></a><strong> 4. vim复制粘贴</strong></h4><ul>
+<li><h5 id="vim-normal-模式复制粘贴"><a href="#vim-normal-模式复制粘贴" class="headerlink" title="vim normal 模式复制粘贴"></a>vim normal 模式复制粘贴</h5><ul>
+<li>normal模式下复制粘贴分别用y (ank) 和p (ut) ，剪切d和p</li>
+<li>可以用v (isual) 命令选中所要复制的地方，然后使用p粘贴</li>
+<li>配合文本对象：比如使用yiw复制一个单词，yy 复制一行，然后p粘贴</li>
+</ul>
+</li>
+<li><h5 id="vim-insert-模式复制粘贴"><a href="#vim-insert-模式复制粘贴" class="headerlink" title="vim insert 模式复制粘贴"></a>vim insert 模式复制粘贴</h5><ul>
+<li>insert 模式下复制粘贴根据使用系统、终端的不同，有以下几种方式</li>
+<li>ms-windows Ctrl-c Ctrl-v</li>
+<li>mac-os     Cmd-c Cmd-v</li>
+<li>xshell     Ctrl-insert    Shift-insert</li>
+<li>如果在 vimrc 中设置了autoindent，极有可能造成粘贴格式错乱，可以临时做如下处理</li>
+<li>在粘贴之前进行 :set paste，粘贴完成之后进行 :set nopaste</li>
+</ul>
+</li>
+</ul>
+<h2 id="PS-建议一边操作一边加深理解vim哲学，可以在normal模式下，使用-help-命令-来查看命令的详细解释"><a href="#PS-建议一边操作一边加深理解vim哲学，可以在normal模式下，使用-help-命令-来查看命令的详细解释" class="headerlink" title=" PS: 建议一边操作一边加深理解vim哲学，可以在normal模式下，使用 :help {命令} 来查看命令的详细解释"></a><strong> PS: 建议一边操作一边加深理解vim哲学，可以在normal模式下，使用 :help {命令} 来查看命令的详细解释</strong></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
+        <p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+<script src="/js/highlight.pack.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+  </body>
+</html>
+
